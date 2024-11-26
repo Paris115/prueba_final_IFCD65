@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba Final Formulario</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <div id="contenedor">
+
+    <form id="servicioForm">
+        <img id="ImagenLogo" src="./image/eheLogo.png" alt="logo_ehe">
+        <p id="EHTituloLogo" style="display: inline;">Escuela de Hosteleria</p>
+        <p id="EuroTituloLogo" style="display: inline;">Europea</p>
+
+        <label class="labelTitulo" for="nombreAlumno">Nombre</label>
+        <input class="inputText" type="text" name="Nombre del Alumno" id="nombreAlumno" placeholder="Ponga su nombre">
+        
+        <label class="labelTitulo" for="apellidosAlumno">Apellidos</label>
+        <input class="inputText" type="text" name="Apellidos del Alumno" id="apellidosAlumno" placeholder="Ponga sus apellidos">
+
+      <label class="labelTitulo" for="emailAlumno">Email de Contacto</label>
+      <input class="inputText" type="email" name="Email del alumno" id="emailAlumno" placeholder="Ponga su email">
+
+      <label class="labelTitulo" for="numContacto">Num. de Contacto</label>
+      <input class="inputText" type="text" name="Numero de Contacto" id="numContacto" maxlength="9" placeholder="+34 123-456-789">
+
+
+      <label class="labelTitulo" for="motContacto">Motivo del Cntacto</label>
+      <select name="Motivo Contacto" id="motContacto" class="selectDesp">
+        <option value="motivo1">Deseo darme de baja.</option>
+        <option value="motivo2">Deseo inscribirme a un curso.</option>
+        <option value="motivo3">Aviso de falta.</option>
+        <option value="motivo4">Tengo una duda o queja.</option>
+      </select>
+
+      
+      <p class="labelTitulo" id="descProblemaTitulo">Datos extra de interés</p>
+      <textarea name="Informacion del Problema" id="descProblema"
+        placeholder="Explique aqui sus motivos mas descriptivamente..."></textarea>
+
+      <input type="submit" value="Enviar" id="subBoton">
+
+    </form>
+  </div>
+  <script src="js/myScripts.js"></script>
+</body>
+
+</html>
