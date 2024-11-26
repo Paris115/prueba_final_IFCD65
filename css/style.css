@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fffaf2;
+}
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#imagenLogo{
+    position: relative;
+    width: 147px;
+    height: 61px;
+    top: 0.5em;
+    left: 24em;
+}
+
+#servicioForm {
+    margin: 40px 0;
+    background-color: #ddf4ff;
+    color: #000;
+    border-radius: 50px;
+    padding: 40px 60px 0px 60px;
+    width: 649px;
+    height: 869px;
+    box-shadow: 3px 13px 10px 0 rgba(0, 0, 0, 0.2);
+    font-family: "Roboto", serif;
+}
+
+.labelTitulo {
+    font-family: "Roboto", serif;
+    display: block;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.inputText {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    width: 380px;
+    height: 32px;
+    padding: 5px 10px;
+}
+
+.inputText:focus {
+    outline: none;
+    border: solid 2px rgb(0, 56, 238);
+    border-radius: 4px;
+}
+
+#descProblema {
+    width: 380px;
+    height: 240px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border: none;
+    resize: none;
+}
+
+#subBoton {
+    background-color: #0089d0;
+    color: white;
+    display: block;
+    position: relative;
+    top: 0.5em;
+    left: 24em;
+    width: 147px;
+    height: 61px;
+    text-align: center;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 4px 4px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
