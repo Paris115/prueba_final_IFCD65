@@ -6,7 +6,7 @@ let vacio
  * @returns boolean
  */
 function comprobarNombre(nameInfo) {
-    let namePattern = /^[A-Za-záéíóúñÁÉÍÓÚÑ]{2,}([\s][A-Za-záéíóúñÁÉÍÓÚÑ]{2,})+$/;
+    let namePattern = /^[A-Za-záéíóúñÁÉÍÓÚÑ]{2,}([\s]*[A-Za-záéíóúñÁÉÍÓÚÑ]{2,})+$/;
     if (nameInfo === "") {
         return vacio
     } else {
@@ -61,29 +61,37 @@ quitarConFocus()
 //Usa la funcion quitarConFocus() a traves del campo del nombre.
 function QCFNombre() {
     document.getElementById("subBoton").removeAttribute("disabled", "")
+    document.getElementsByClassName("necesario").style.border = "none";
+
 }
 
 //Usa la funcion quitarConFocus() a traves del campo del email.
 function QCFEmail() {
     document.getElementById("subBoton").removeAttribute("disabled", "")
+    document.getElementsByClassName("necesario").style.border = "none";
+
 }
 
 //Usa la funcion quitarConFocus() a traves del campo del codigo.
 function QCFNumero() {
     document.getElementById("subBoton").removeAttribute("disabled", "")
+    document.getElementsByClassName("necesario").style.border = "none";
+
 }
 
 
 //Funcion que ""envia" los datos.
 function enviarDatosForm() {
     if (comprobarNombre(document.getElementById("nombreAlumno").value) && comprobarEmail(document.getElementById("emailAlumno").value) && comprobarNumero(document.getElementById("numContacto").value)) {
-        /*document.getElementById("subtituloHeader").style.display = "none"; //Quita el subtitulo.
-        document.getElementById("tituloHeader").style.display = "none"; //Quita el titulo.
-        document.getElementById("servicioForm").style.display = "none"; //Quita el formulario.
+        let nombreA = document.getElementById("nombreAlumno").value;
+        let apellidosA = document.getElementById("apellidosAlumno").value;
+        document.getElementById("subBoton").setAttribute("disabled", "")
+        document.getElementById("servicioForm").style.display = "none"; //Quita el informe.*/
         document.getElementById("respuestasForm").style.display = "block"; //Muestra el informe de las respuestas.*/
-        //Si hay valor de alergenos y no hay valor de info extra
+        document.getElementById("mensajeRespuesta").innerHTML = "Gracias por su colaboracion, " + nombreA + " " + apellidosA ; //Mensaje
 
     }  else {
         document.getElementById("subBoton").setAttribute("disabled", "")
+        document.getElementsByClassName("necesario").style.border = "red solid 2px"; //Error en la validacion.*/
     }
 }
