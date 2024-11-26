@@ -61,22 +61,27 @@ quitarConFocus()
 //Usa la funcion quitarConFocus() a traves del campo del nombre.
 function QCFNombre() {
     document.getElementById("subBoton").removeAttribute("disabled", "")
-    document.getElementsByClassName("necesario").style.border = "none";
+    document.getElementById("nombreAlumno").style.border = "none";
+    document.getElementById("emailAlumno").style.border = "none";
+    document.getElementById("numContacto").style.border = "none";
 
 }
 
 //Usa la funcion quitarConFocus() a traves del campo del email.
 function QCFEmail() {
     document.getElementById("subBoton").removeAttribute("disabled", "")
-    document.getElementsByClassName("necesario").style.border = "none";
+    document.getElementById("nombreAlumno").style.border = "none";
+    document.getElementById("emailAlumno").style.border = "none";
+    document.getElementById("numContacto").style.border = "none";
 
 }
 
 //Usa la funcion quitarConFocus() a traves del campo del codigo.
 function QCFNumero() {
     document.getElementById("subBoton").removeAttribute("disabled", "")
-    document.getElementsByClassName("necesario").style.border = "none";
-
+    document.getElementById("nombreAlumno").style.border = "none";
+    document.getElementById("emailAlumno").style.border = "none";
+    document.getElementById("numContacto").style.border = "none";
 }
 
 
@@ -92,6 +97,8 @@ function enviarDatosForm() {
 
     }  else {
         document.getElementById("subBoton").setAttribute("disabled", "")
-        document.getElementsByClassName("necesario").style.border = "red solid 2px"; //Error en la validacion.*/
+        document.getElementById("nombreAlumno").style.border = "red solid 2px"; //Error en la validacion.*/
+        document.getElementById("emailAlumno").style.border = "red solid 2px"; //Error en la validacion.*/
+        document.getElementById("numContacto").style.border = "red solid 2px"; //Error en la validacion.*/
     }
 }
